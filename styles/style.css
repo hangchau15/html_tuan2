@@ -5,77 +5,63 @@ html {
   box-sizing: inherit;
   padding: 0px;
   margin: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-
-/*HEADER CSS*/
-.top-header {
-
-	font-family: 'Roboto Condensed', sans-serif;
+.bold {
 	font-weight: bold;
-	color: #4e4e4e;
-	text-transform: uppercase;
-	height: 123px;
 }
-
+.color-gray {
+	color: #4e4e4e;
+}
+/*HEADER CSS*/
 .logo {
 	font-size: 40px;
 	padding-left: 215px;
 	padding-top: 48px;
 	padding-bottom: 48px;
-
 }
  nav {
  	display: flex;
  	justify-content: space-between;
  	background-color: #e3e3e3;
-
  }
 .nav-menu {
 	list-style: none;
 	margin-top: 48px;
-	margin-right: 215px;
-
+	margin-right: 21px;
 }
-
 .nav-menu li {
 	display: inline-block;
-
 }
-
 .nav-menu li a{
 	text-decoration: none;
+	text-transform: uppercase;
 	color: #4e4e4e;
 	padding-right: 21px;
 	padding-left: 21px;
 }
-
 .nav-menu li a:hover {
 	color: #1abb9c;
 }
-
 		/*HERO CSS*/
-header {
-	background: url("../images/home_02.jpg");
+.banner {
+	text-transform: uppercase;
 	background-size: cover;
-	font-family: 'Roboto Slab', serif;
 	text-align: center;
 	height: 600px;
+	background: url("../images/home_02.jpg");
 }
-
-.header-title-1 {
+.banner-title-large {
 	color: #f3f3f3;
 	font-size: 40px;
-	font-weight: bold;
 	padding-top: 199px;
  }
-.header-title-2 {
+.banner-title-small {
 	color: #a8a8a8;
 	font-size: 30px;
-	font-weight: bold;
 	margin-bottom: 50px;
 }
-
-.header-cta-button {
+.banner-cta-button {
 	color: #ffffff;
 	font-size: 14px;
 	background-color: #3f8dbf;
@@ -83,24 +69,19 @@ header {
 	padding: 17px 26px;
 	border-radius: 2px;
 	margin-bottom: 100px;
-
 }
-
 	/*CONTENT CSS*/
 .content{
 	background-color: #f7f7f7;
 }
-
-.row1 {
+.about {
 	display: flex;
 	justify-content: space-between;
  	margin-bottom: 64px;
 }
-
 .box-icon {
 	margin-top: 60px;
 }
-
 .box-icon img {
  	display: block;
   	margin-left: auto;
@@ -109,99 +90,75 @@ header {
  }
 
  .box-icon h3 {
- 	font-family: 'Roboto Slab', serif;
- 	color: #4e4e4e;
  	font-size: 18px;
- 	font-weight: bold;
  	text-align: center;
  	margin-bottom: 19px;
  }
 
  .box-icon p {
- 	font-family: 'Roboto', sans-serif;
  	color: #616161;
  	font-size: 14px;
  	text-align: center;
  	margin: auto 54px;
  }
-
-.row2 {
+hr {
 	color: #dcdcdc;
 	height: 2px;
 	margin: auto 32px;
 }
-
-.row3 {
-	font-family: 'Roboto Condensed', sans-serif;
+.post {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.post h3 {
 	font-size: 18px;
-	font-weight: bold;
-	color: #4e4e4e;
 	margin-top: 60px;
 	margin-left: 32px;
 }
-
-.row4 {
+.post-item {
 	display: flex;
-	justify-content: space-between;
 }
 .img-box {
 	margin-top: 25px;
 	margin-bottom: 57px;
 }
-
 .img-box img {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
  	margin-left: 32px
-
 }
 .title {
- 	font-family: 'Roboto Slab', serif;
- 	color: #4e4e4e;
  	font-size: 18px;
- 	font-weight: bold;
  	margin-left: 32px;
  	margin-top: 25px;
  }
-
  .sub-title {
- 	font-family: 'Roboto', sans-serif;
  	color: #bebebe;
  	font-size: 13px;
  	margin-left: 32px;
  	margin-top: 15px;
-
  }
-
  .description {
- 	font-family: 'Roboto', sans-serif;
  	font-size: 14px;
  	color: #5c5c5c;
  	margin-left: 32px;
  	margin-top: 24px;
-
-
  }
-
 .descript {
 	background-color: #efefef;
 	height: 230px;
 	text-align: center;
-
 }
-
 .descript p {
-	font-family: 'Roboto Slab', serif;
 	width: 734px;
 	font-size: 20px;
 	color: #a1a1a1;
 	display: inline-block;
 	margin-top: 54px;
 }
-
 /*footer*/
-
 footer {
 	height: auto;
 	background-color: #1f1f1f;
