@@ -1,10 +1,9 @@
-//display and hidden menu responsive
 function myFunction() {
   var x = document.getElementById("menu-responsive");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (x.className === "menu-responsive") {
+    x.className += " responsive";
   } else {
-    x.style.display = "block";
+    x.className = "menu-responsive";
   }
 }
 
