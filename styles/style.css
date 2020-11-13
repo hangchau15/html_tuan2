@@ -35,40 +35,50 @@ html {
   .header-top .logo {
     text-transform: uppercase;
     font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .header-top h3:hover {
+    transform: translateY(-6px);
   }
   .header-top {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
   .nav-menu {
     align-self: center;
   }
   .menu-icon {
-    position: absolute;
     top: 7px;
     right: 0;
   }
+
+  /* menu css */
   .menu-responsive {
     /* display: none; */
     list-style: none;
     text-align: center;
     display: none;
   }
-  .menu-responsive.responsive {
-    display: block;
-  }
-  .menu-responsive.responsive li { padding-top: 20px; }
   .menu-responsive li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #4e4e4e;
+    padding: 16px;
   }
-  .menu-responsive li a{padding: 16px;}
-  .menu-responsive li a:hover {
-    color: #619696;
+  .menu-responsive.responsive {
+    display: block;
+    border-radius: 5px;
   }
-  /* .menu-responsive.responsive li:hover {
-    background-color:red;
-  } */
+  .menu-responsive.responsive li { padding: 15px; }
+  .menu-responsive.responsive li:hover {
+    background: rgba(172, 166, 166, 0.7);
+    border-radius: 5px;
+  }
+  .menu-responsive.responsive li a:hover {
+    color: white;
+  }
+
+  /* about css */
   .content {
     background-color: #f7f7f7;
     padding: 3.75rem 2rem 2.5rem 2rem;
@@ -92,6 +102,21 @@ html {
     color: #616161;
     text-align: center;
   }
+  /* flash image animation */
+@-webkit-keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1; }
+  }
+  @keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1; }
+  }
+  .boxicon-item img:hover {
+  opacity: 1;
+  -webkit-animation: flash 2s;
+  animation: flash 2s;
+  }
+
   /* post css */
   .post {
     margin: 2rem 0;
@@ -107,8 +132,39 @@ html {
     width: 100%;
     height: auto;
   }
-  .img-box img:hover{
-    transform: scale(1.1);
+  .img-box-img {
+    overflow: hidden;
+  }
+  .img-box-img img {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  .img-box-img img:hover {
+      transform: scale(1.5);
+  }
+  .btn-read-more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 1.5rem;
+    padding: 16px 28px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn-read-more:hover {
+    background-color: #4e4e4e;
+    border-radius: 25px;
+  }
+  .img-box-img {
+    position: relative;
+    width: 100%;
   }
   .img-box .title {
     margin-top: 1.5625rem;
@@ -123,6 +179,8 @@ html {
     font-size: 0.875rem;
     margin-top: 1.5rem;
   }
+
+  /* descript css */
   .descript {
     background-color: #efefef;
     height: 14.375rem;
@@ -133,20 +191,7 @@ html {
     font-size: 1.25rem;
     padding: 3.75rem;
   }
-/* flash image animation */
-@-webkit-keyframes flash {
-  0% { opacity: .3; }
-  100% { opacity: 1; }
-  }
-  @keyframes flash {
-  0% { opacity: .3; }
-  100% { opacity: 1; }
-  }
-  .boxicon-item img:hover {
-  opacity: 1;
-  -webkit-animation: flash 2s;
-  animation: flash 2s;
-  }
+
   /* desktop style */
   @media (min-width: 1024px) {
     .menu-icon {
@@ -163,6 +208,11 @@ html {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-color: #e3e3e3;
+    }
+    .menu-responsive.responsive li { padding: 0px; }
+    .menu-responsive.responsive li:hover {
+      background: #e3e3e3;
     }
     .menu-responsive li a{
       padding-left: 1rem;
@@ -174,6 +224,7 @@ html {
       background-color: #616161;
   
     }
+    
     /* about css */
     .content {
       padding: 3.75rem 2rem 2.5rem 2rem;
@@ -181,6 +232,10 @@ html {
     .container-about {
       display: flex;
       justify-content: space-between;
+    }
+    .btn-read-more {
+      font-size: 1rem;
+      padding: 12px 24px;
     }
     .post-item {
       display: flex;
@@ -191,7 +246,4 @@ html {
       padding: 0 20px;
       flex: 33%;
     }
-    
   }
-
-
