@@ -1,88 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>MARBLE</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	
-
-</head>
-<body>
-	<header>
-		<nav class="bold">
-			<h3 class="logo color-gray">Marble</h3>
-			<ul class="nav-menu">
-				<li><a href="#">home</a></li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">jounal</a></li>
-				<li><a href="#">service</a></li>
-				<li><a href="#">features</a></li>
-				<li><a href="#">contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="banner">
-		<h3 class="banner-title-large bold color-gray">We are a digital &amp; branding agency based in London.</h3>
-		<h4 class="banner-title-small bold">We love to turn great ideas into beautiful products.</h4>
-		<a href="#" class="banner-cta-button">SEE PORTFOLIO</a>
-	</div>
-	<div class="content">
-		<div class="container">
-			<div class="about">
-				<div class="box-icon">
-					<img src="./images/home_05.jpg" alt="pellentesque">
-					<h3 class="bold color-gray">Pellentesque</h3>
-					<p>Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
-				</div>
-				<div class="box-icon">
-					<img src="./images/home_07.jpg" alt="consectetur">
-					<h3 class="bold color-gray">Consectetur</h3>
-					<p>Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
-				</div>
-				<div class="box-icon">
-					<img src="./images/home_09.jpg" alt="tristiquet">
-					<h3 class="bold color-gray">Tristiquet</h3>
-					<p>Fusce dapibux, cursus, commodo, tortor msuris cindimentum nibh, ut ferentum massa justo risus</p>
-				</div>
-				<div class="box-icon">
-					<img src="./images/home_11.jpg" alt="ferentum">
-					<h3 class="bold color-gray">Fermentum</h3>
-					<p>Aenean ew lwo quam. Pellentesqus ornare sem lacinia quam venenastis vestibulum sagittis lacus mollis.</p>
-				</div>
-			</div>
-			<hr>
-			<div class="post">
-				<h3>OUR LASTEST WORKS</h3>
-				<div class="post-item">
-					<div class="img-box">
-						<img src="./images/home_18.jpg" alt="nobis busssiness card">
-						<h3 class="title bold color-gray">Nobis Bussiness Card</h3>
-						<p class="sub-title">Bussiness Card, Graphic</p>
-						<p class="description">Sed posuere consectetur est at la lobortis. Porta sagittis lacus vel augue laoreet rutrum.</p>
-					</div>
-					<div class="img-box">
-						<img src="./images/home_20.jpg" alt="new fun project">
-						<h3 class="title bold color-gray">New Fun Project</h3>
-						<p class="sub-title">Web Design, Application</p>
-						<p class="description">Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula porta felis.</p>
-					</div>
-					<div class="img-box">
-						<img src="./images/home_22.jpg" alt="passionaries branding cover">
-						<h3 class="title bold color-gray">Passionaries Brading Cover</h3>
-						<p class="sub-title">Branding, Graphic Design</p>
-						<p class="description">Curabitur blandit tempus porttior. Donec id elit nin mi porta gravida at eget metus</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="descript">
-			<p>Cras matiss consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus erat porttitor.</p>
-		</div>
-	</div>
-	<footer>
-		<div>top footer</div>
-		Đây là nội dung footer
-	</footer>
-</body>
+    <head>
+        <title>Responsive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+                integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+                crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body class="container">
+        <header>
+            <div class="row color-gray">
+                <div class="header-top">
+                    <h3 class="logo">marble</h3>
+                    <a href="javascript:void(0);" class="menu-icon color-gray dropdown" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </a>
+                </div>
+                <nav class="bold nav-menu">
+                    <ul id="menu-responsive" class="menu-responsive .dropdown_menu--animated dropdown_menu-6">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">jounal</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">feature</a></li>
+                        <li><a href="#">contact</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="slideshow-container">
+            <img class="mySlides" src="./images/slide1.jpg">
+            <img class="mySlides" src="./images/slide2.jpg">
+            <img class="mySlides" src="./images/slide4.jpg">
+        </div>
+        <div class="content">
+            <section class="about">
+                <div class="container-about">
+                    <div class="boxicon-item">
+                        <img src="./images/home_05.jpg" alt="pellentesque">
+                        <h3 class="bold color-gray">Pellentesque</h3>
+                        <p>Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+                    </div>
+                    <div class="boxicon-item">
+                        <img src="./images/home_07.jpg" alt="consectetur">
+                        <h3 class="bold color-gray">Consectetur</h3>
+                        <p>Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
+                    </div>
+                    <div class="boxicon-item">
+                        <img src="./images/home_09.jpg" alt="tristiquet">
+                        <h3 class="bold color-gray">Tristiquet</h3>
+                        <p>Fusce dapibux, cursus, commodo, tortor msuris cindimentum nibh, ut ferentum massa justo risus</p>
+                    </div>
+                    <div class="boxicon-item">
+                        <img src="./images/home_11.jpg" alt="ferentum">
+                        <h3 class="bold color-gray">Fermentum</h3>
+                        <p>Aenean ew lwo quam. Pellentesqus ornare sem lacinia quam venenastis vestibulum sagittis lacus mollis.</p>
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section class="post">
+                <div class="container-post">
+                    <h3 class="color-gray">OUR LASTEST WORKS</h3>
+                    <div class="post-item">
+                        <div class="img-box">
+                            <div class="img-box-img">
+                                <img src="./images/home_18.jpg" alt="nobis busssiness card">
+                                <button class="btn-read-more">Read more</button>
+                            </div>
+                            <h3 class="title bold color-gray">Nobis Bussiness Card</h3>
+                            <p class="sub-title">Bussiness Card, Graphic</p>
+                            <p class="description">Sed posuere consectetur est at la lobortis. Porta sagittis lacus vel augue laoreet rutrum.</p>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-box-img">
+                                <img src="./images/home_20.jpg" alt="new fun project">
+                                <button class="btn-read-more">Read more</button>
+                            </div>
+                            <h3 class="title bold color-gray">New Fun Project</h3>
+                            <p class="sub-title">Web Design, Application</p>
+                            <p class="description">Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula porta felis.</p>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-box-img">
+                                <img src="./images/home_22.jpg" alt="passionaries branding cover">
+                                <button class="btn-read-more">Read more</button>
+                            </div>
+                            <h3 class="title bold color-gray">Passionaries Brading Cover</h3>
+                            <p class="sub-title">Branding, Graphic Design</p>
+                            <p class="description">Curabitur blandit tempus porttior. Donec id elit nin mi porta gravida at eget metus</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="descript">
+            <p>Cras matiss consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus erat porttitor.</p>
+        </section>    
+    </body>
 </html>
+<script src="js/script.js"></script>
